@@ -1,0 +1,34 @@
+@import "variables.scss";
+
+@mixin link($_link, $_hover, $_active, $_visited) {
+  a {
+    color: $_link;
+
+    &:hover {
+      color: $_hover;
+    }
+
+    &:active {
+      color: $_active;
+    }
+
+    &:visited {
+      color: $_visited;
+    }
+  }
+}
+
+@mixin text($_fontsize, $_lineheight) {
+  font-size: $_fontsize;
+  line-height: $_lineheight;
+}
+
+@mixin paddings($paddings...) {
+  padding: $paddings;
+}
+
+@mixin container($_maxWidth) {
+  max-width: $_maxWidth;
+  padding: 0 10px;
+  margin: 0 auto;
+}
