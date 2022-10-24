@@ -29,4 +29,4 @@ const filter = () => {
   }
 };
 
-filter();
+export {filter}

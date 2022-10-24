@@ -31,4 +31,4 @@ const hover = () => {
   }
 };
 
-hover();
+export {hover}
